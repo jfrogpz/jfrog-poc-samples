@@ -1,0 +1,100 @@
+{
+  "name": "cli-python-build",
+  "number": "15",
+  "agent": {
+    "name": "jfrog-cli-go",
+    "version": "2.76.1"
+  },
+  "buildAgent": {
+    "name": "GENERIC",
+    "version": "2.76.1"
+  },
+  "modules": [
+    {
+      "type": "python",
+      "id": "jfrog-python-example",
+      "dependencies": [
+        {
+          "id": "Flask-2.2.2-py3-none-any.whl",
+          "sha1": "4e8ed5b42d4b26cd51e85c813091138f04ee742c",
+          "md5": "e737537775d400ad00adf8f59358f7ab",
+          "sha256": "b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526"
+        },
+        {
+          "id": "itsdangerous-2.2.0-py3-none-any.whl",
+          "sha1": "19325efeb2e2cb813b1ffa89ee8eb6d9f8bacac1",
+          "md5": "22e41bfb2008481e855f1693a9df4c54",
+          "sha256": "c6242fc49e35958c8b15141343aa660db5fc54d4f13a1db01a3f5891b98700ef"
+        },
+        {
+          "id": "click-8.2.1-py3-none-any.whl",
+          "sha1": "c66235d46110f6fd56bab4bc90e9b531fd50dff6",
+          "md5": "aeead16d8bed93caa7107ac87b1e5ec8",
+          "sha256": "61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b"
+        },
+        {
+          "id": "charset_normalizer-2.1.1-py3-none-any.whl",
+          "sha1": "dcf26e92d4c87e0859fa8eb4a5a0e2d444352b2a",
+          "md5": "c67d884d36b9d259f4c6eefab7fab3d4",
+          "sha256": "83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"
+        },
+        {
+          "id": "certifi-2025.6.15-py3-none-any.whl",
+          "sha1": "1da017b8a20eec994c1a6e4f3bbca531961fe4d3",
+          "md5": "8845c8810c449703d1988932c38d3bea",
+          "sha256": "2e0c7ce7cb5d8f8634ca55d2ba7e6ec2689a2fd6537d8dec1296a477a4910057"
+        },
+        {
+          "id": "pytz-2025.2-py2.py3-none-any.whl",
+          "sha1": "fe7938b9d92a0da600ee2af52538405e769fbca4",
+          "md5": "51ad498990b93bab1efdb6ecce983474",
+          "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00"
+        },
+        {
+          "id": "Flask-2.2.2-py3-none-any.whl",
+          "sha1": "4e8ed5b42d4b26cd51e85c813091138f04ee742c",
+          "md5": "e737537775d400ad00adf8f59358f7ab",
+          "sha256": "b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526"
+        },
+        {
+          "id": "requests-2.28.1-py3-none-any.whl",
+          "sha1": "e660eeaa2913d92e85cbdff458f94c76a3cd0588",
+          "md5": "d18f682863389367f878339e288817f2",
+          "sha256": "8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
+        },
+        {
+          "id": "Django-1.11.29-py2.py3-none-any.whl",
+          "sha1": "b030b87ffe746d5682cb64183a7bff4cc60099b4",
+          "md5": "d0ca2dbbdcca6e49536d527fbc32e4ea",
+          "sha256": "014e3392058d94f40569206a24523ce254d55ad2f9f46c6550b0fe2e4f94cf3f"
+        },
+        {
+          "id": "werkzeug-3.1.3-py3-none-any.whl",
+          "sha1": "982c284ba48d5b9489b57000312e12b47cb8622f",
+          "md5": "ff3a2b0d0953eadee90c945d879c5aac",
+          "sha256": "54b78bf3716d19a65be4fceccc0d1d7b89e608834989dfae50ea87564639213e"
+        },
+        {
+          "id": "jinja2-3.1.6-py3-none-any.whl",
+          "sha1": "65a4983e02ace6506cc5fc4b4abd5a992da4e786",
+          "md5": "845b37cea56edd0f4dbd949244e9d798",
+          "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+        },
+        {
+          "id": "idna-3.10-py3-none-any.whl",
+          "sha1": "9a22e84a3d5bdd391de45e4aa49c77944ef172ec",
+          "md5": "ce22685f1b296fb33e5fda362870685d",
+          "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"
+        },
+        {
+          "id": "urllib3-1.26.20-py2.py3-none-any.whl",
+          "sha1": "96a2ae437df2418abe87a97a565e71a47ae2be62",
+          "md5": "7e0b513a3a35c882aee2bc2e7e6e9848",
+          "sha256": "0ed14ccfbf1c30a9072c7ca157e4319b70d65f623e91e7b32fadb2853431016e"
+        }
+      ]
+    }
+  ],
+  "started": "2025-06-18T12:55:29.106+0800",
+  "artifactoryPrincipal": "kyle"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "jfrog-npm-demo",
+  "version": "1.0.0",
+  "description": "NPM project using JFrog CLI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "export-to-csv": "^1.4.0",
+    "log4js": "0.6.38"
+  }
+}
