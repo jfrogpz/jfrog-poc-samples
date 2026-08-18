@@ -21,24 +21,11 @@ go-sample/
 
 ## Configuration
 
-### 1. Configure Go Environment
-
-Set the following environment variables:
-
-```bash
-# For Linux/macOS
-export GOPROXY=export GOPROXY="https://username:password@arti-server/artifactory/api/go/alex-go",direct
-
-# For Windows
-set GOPROXY=https://username:password@arti-server/artifactory/api/go/go,direct
-set GOSUMDB=off
-```
-
-### 2. Configure JFrog CLI
+### 1. Use JFrog CLI (works with http)
 
 ```bash
 # Configure Artifactory
-jf c add artifactory
+jf c add
 
 # Follow the prompts to enter:
 # - Server ID: artifactory
@@ -47,13 +34,27 @@ jf c add artifactory
 # - Password/API Key: <your-password-or-api-key>
 ```
 
+### 2. Use Go Client (works with https)
+
+Set the following environment variables:
+
+```bash
+
+# For Linux/macOS
+export GOPROXY=export GOPROXY="https://username:password@arti-server/artifactory/api/go/alex-go",direct
+
+# For Windows
+set GOPROXY=https://username:password@arti-server/artifactory/api/go/go,direct
+set GOSUMDB=off
+```
+
 ## Building
 
 ### 1. Build the Project
 
 ```bash
 # Build the project
-jf rt go build --build-name vulnerable-go-project --build-number 1
+jf go build
 ```
 
 ## Publishing
