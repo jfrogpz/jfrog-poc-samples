@@ -1,0 +1,30 @@
+# ===== NuGet =====
+
+# 打包产物
+*.nupkg
+*.snupkg
+
+# packages 文件夹（Package Restore 会自动还原，不需要提交）
+**/[Pp]ackages/*
+# 但保留 MSBuild target 目录
+!**/[Pp]ackages/build/
+
+# NuGet 中间文件
+*.nuget.props
+*.nuget.targets
+project.lock.json        # NuGet v3 (project.json 项目)
+project.assets.json      # NuGet v4+ / .NET Core (PackageReference 格式)
+project.fragment.lock.json
+
+# NuGet 本地配置目录
+.nuget/
+
+# ===== Build 输出 =====
+[Bb]in/
+[Oo]bj/
+
+# ===== Visual Studio 用户文件 =====
+*.suo
+*.user
+*.sln.docstates
+.vs/
