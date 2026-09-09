@@ -14,7 +14,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '20 18 * * 1'
+    - cron: "0 2 * * 3" # Every Wen at 10:00 Beijing time
 
 env:
   # [Mandatory]
