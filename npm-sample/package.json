@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "export-to-csv": "^1.4.0",
-    "log4js": "0.6.38"
+    "log4js": "0.6.38",
+    "axios": "1.18.1"
   }
 }
