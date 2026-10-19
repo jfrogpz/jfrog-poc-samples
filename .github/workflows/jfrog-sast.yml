@@ -45,8 +45,20 @@ jobs:
 
     - name: Run JFrog SAST
       run: |
+        # 1. 执行扫描并输出原始文件
         jf audit --sast --format=sarif > jfrog_sast.sarif
-
+        
+        # 2. 使用 jq 修复深度嵌套的 locations 数组中的 importance 属性
+        # 如果 importance 的值为空字符串 ""，则自动重置为 "essential"
+        jq '
+          walk(
+            if type == "object" and has("importance") and .importance == "" then
+              .importance = "essential"
+            else
+              .
+            end
+          )
+        ' jfrog_sast.sarif > jfrog_sast_fixed.sarif && mv jfrog_sast_fixed.sarif jfrog_sast.sarif
 
     - name: Upload output to generate autofix
       uses: github/codeql-action/upload-sarif@v4
