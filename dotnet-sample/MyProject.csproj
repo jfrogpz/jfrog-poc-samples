@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.APP" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.APP" Version="2.1.22" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.1" />
   </ItemGroup>
 
 </Project>
